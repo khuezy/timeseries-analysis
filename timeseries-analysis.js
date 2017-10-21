@@ -1200,7 +1200,7 @@ adapter.fromDB = function(data, options) {
 	}, options);
 	
 	return _.map(data, function(datapoint) {
-		return [new Date(datapoint[options.date]).getTime(), datapoint[options.value]];
+		return [new Date(_.get(datapoint, options.date)).getTime(), datapoint[options.value]];
 	});
 };
 adapter.fromArray = function(data) {

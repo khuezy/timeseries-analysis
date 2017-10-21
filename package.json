@@ -23,7 +23,7 @@
 		"node": "*"
 	},
 	"dependencies": {
-		"underscore": "latest",
+		"lodash": "latest",
 		"google-image-chart": "latest"
 	},
 	"devDependencies": {},
